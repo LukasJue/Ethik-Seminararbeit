@@ -38,33 +38,18 @@
 
 \pagenumbering{Roman}
 
-\include{chapter/Vorwort} \clearpage
-\include{chapter/Abstract} \clearpage
+\input{chapter/Abstract} \clearpage
+% Eigenständigkeitserklärung
+\input{chapter/Eigenstaendigkeitserklaerung} \clearpage
 
 \tableofcontents \newpage
 
 \pagenumbering{arabic}
 \input{chapter/Einleitung} \clearpage
-\input{chapter/Beispiele} \clearpage
-
-\pagenumbering{Alph}
-\listoffigures \clearpage
-\listoftables \clearpage
-\lstlistoflistings \clearpage
-
-\printindex \clearpage
-
-\printglossary[title={Glossar}] \clearpage
-\printglossary[style=dottedlocations,type=\acronymtype,title={Abkürzungsverzeichnis}] \clearpage
-
-\printbibliography[heading=bibintoc, keyword={book}, title={Literaturverzeichnis}]\clearpage
-\printbibliography[heading=bibintoc, keyword={online}, title={Onlinequellen}]\clearpage
-\printbibliography[heading=bibintoc, keyword={image}, title={Bildquellen}]\clearpage
+\input{chapter/Bedenken} \clearpage
+\input{chapter/Zusammenfassung} \clearpage
 
 % Anhang
 \input{chapter/Anhang}
-
-% Eigenständigkeitserklärung
-\input{chapter/Eigenstaendigkeitserklaerung}
 
 \end{document}
