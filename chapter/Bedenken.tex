@@ -2,4 +2,106 @@
 
 \section{Allgemeine Bedenken}
 
+\begin{figure}
+  \includegraphics[width=\linewidth]{resources/ethical_concerns.png}
+  \caption{Six types of ethical concerns raised by algorithms, (S. 4, Figure 1 )}
+  \label{fig:Ethische Bedenken}
+\end{figure}
+
+
+% * <Alena Schemmert> 17:06:07 23 Sep 2019 UTC+0200:
+% Hier fehlt noch eine Beschreibung zum Bild
+
+\subsection{Uneindeutige Anhaltspunkte}
+ Künstliche Intelligenzen und allgemein Algorithmen des machinellen Lernens ziehen viele Schlussfolgerungen auf Grundlage von Wahrscheinlichkeiten und statistischen Mitteln.
+ Deshalb sind die Ergebnisse zwar überprüfbar, aber mit Unsicherheit versehen.
+ Das ist auch problematisch da häufig statistische Korrelationen benutzt werden. Aber Korrelation ist nihct gleich Kausalität - nur weil zwei Sachen immer im gleichen Kontext auftaucht, bedingen diese sich nicht gegenseitig.
+ Häufig wird solche Software in einem Kontext eingesetzt in der zuverlässige Techniken und Daten entweder nicht verfügbar sind, oder zu aufwändig zu implementieren wäre. Dies sollte beachtet werden, wenn aus den Ergebnissen von Algorithmen Erkenntnisse gewonnen werden sollen. 
+
+
+\subsection{Undurchsichtige Anhaltspunkte}
+
+ Als zweiten Faktor neben statistischen Mitteln, die die Ergebnisse von Algorithmen verzerren, werden in dem Paper Parameter genannt. Die Parameter eines Algorithmus können ebenfalls die Wahrscheinlichkeiten von einem Ergebnis beeinflussen. Ein großes Problem hierbei ist, dass der Zusammenhang zwischen Daten und Ergebnis häufig nicht öffentlich zugänglich. Hilfreich wäre die Zusammenhänge zwischen einzelnen Daten, sowie Parametern und deren Ergebnissen in einer Erklärung zu veröffentlichen. Allerdings ist die Funktionalität eines Algorithmus meistens ein Geschäftsgeheimnis, da man diese nicht erklären kann, ohne den Algorithmus selbst zu veröffentlichen. 
+ Dies liegt in der Natur der Sache: Algorithmen sind die Beschreibung zur Abarbeitung einer Teilaufgabe. Also, wie soll man dir Beschreibung beschreiben, ohne zu viel zu verraten, aber gleichzeitig genug, um Vetrauen zu schaffen? 
+ Sozusagen entstehen ethische Bedenken, wenn Algorithmen in eine BlackBox agieren. 
+ 
+
+\subsection{Fehlgeleitete Anhaltspunkte}
+
+\subsection{Unfaire Ergebnisse}
+
+Die vorherigen drei Bedenken beschäftigten sich mit dem Erkenntnisgewinn eines Algorithmus. Die ethischen Bedenken können jedoch auch erst beim Resultat entstehen. Vor allem dann, wenn Handlungen auf ein Ergebnis eines Algorithmus folgen, können diese ethisch unterschiedlich bewertet werden. Diese Bewertung kann man unter dem Wort "Fairness" zusammenfassen. 
+So kann ein Ergebnis von einer diskriminierten Gruppe als unfair betrachtet werden, allein weil eine andere Klasse von Menschen bevorteilt wird. 
+Als ein Beispiel für (un)faire Handlung aufgrund von Ergebnissen von Algorithmen, sind Vorschläge zu Berechnung von Krankenkassenbeiträge. Die erste Variante schlägt vor, dass Mitglieder mit schlechten Gesundheitswerten und wenig Eigeninitiative mehr als den Grundsatz bezahlen. Die andere Variante hingegen, dass Mitglieder mit guten Gesundheitswerten und viel Eigeninitiative einen Rabatt bekommen. 
+Die Umfrage während des Vortrages hat ergeben, dass die zweite Variante höchstwahrscheinlich beer akzeptiert wird, auch wenn diese Variante als ebenfalls unfair betrachtet werden können.
+
+
+\subsection{Transformative Effekte}
+
+% * <Alena Schemmert> 17:06:27 23 Sep 2019 UTC+0200:
+% Muss noch geschrieben werden
+
+\subsection{Nachverfolgbarkeit}
+
+% * <Alena Schemmert> 17:06:32 23 Sep 2019 UTC+0200:
+% Muss noch geschrieben werden
+
 \section{Verzerrte Algorithmen}
+
+Verzerrte Algorithmen lassen sich in drei soziale Problemfelder einteilen, da nicht alle unfairen Ergebnisse eines Algorithmus den gleichen Einfluss auf unser Leben haben. 
+Diese sind Entscheidungsalgorithmen, Empfehlungsalgorithmen, wie Kaufempfehlungen und Life-Style-Software.
+
+
+\subsection{Entscheidungsalgorithmen}
+Unter Entscheidungsalgorithmen versteht man die automatisierte Entscheidung über beispielsweise die Vergabe eine Kredites durch einen Algorithmus. In diesem Bereich gibt es einige Beispiele von verzerrte Algorithmen. 
+
+\subsubsection{SCHUFA}
+Die SCHUFA (Schutzgemeinschaft für allgemeine Kreditsicherung, Wiesbaden) ist ein Unternhemen, welches für Personen einen Score berechnet um die Kreditwürdigkeit abzubilden. Dieser Score wird anhand von verschiedenen Parametern bestimmt. Neben bereits existierenden Krediten oder Anzahl der Kontenüberziehung wird ebenfalls der Wohnort der Person in die Berechnung mit einbezogen. \newline
+
+“Rein statistisch ist es tatsächlich unwahrscheinlicher, von jemandem, der in einem 150-Parteien-Hochhaus mit vielen Schuldnern lebt, einen Kredit zurückzubekommen“
+[Thomas Riemann, Welt, 20.05.15 Geschäftsführer “Verband der Wirtschaftsauskunfteien”]
+
+In vielen Fällen kann es dazu führen, dass der Score schlechter ausfällt, da er auch von statistischen Mitteln abhängt. \cite{welt2015}
+
+
+Die Analyse einer Person anhand Ihrer Umgebung und Eigenheiten nennt man Profiling. 
+
+\subsection{Profiling}
+
+
+% * <Alena Schemmert> 17:04:37 23 Sep 2019 UTC+0200:
+% Muss Noch richtig geschrieben werden
+Profiling Algorithmen erkennen Korrelationen
+- Und machen Vorhersagen über Verhalten auf Gruppen-Ebene
+
+- Personen werden anhand von Verbindungen zu anderen Personen verglichen
+- Anstatt das tatsächliche Verhalten von Individuen zu bewerten
+
+- Der Handlungsrahmen einer Person wird anhand von Informationen zur Personen-Gruppe abgesteckt
+- Es ist deshalb sehr naheliegend, dass diese Art von Algorithmen zu Diskriminierung neigen
+
+- Daten-basierte Diskriminierung ist genauso wenig zu ertragen wie soziale Diskriminierung aufgrund von Vorurteilen
+- Diskriminierung ist das Ergebnis wiederholter Verzerrung
+- Und fördern damit Schubladen-Denken 
+
+\subsection{Empfehlungsalgorithmen}
+
+% * <Alena Schemmert> 17:07:27 23 Sep 2019 UTC+0200:
+% Muss noch geschrieben werden
+
+\subsection{Life-Style-Software}
+
+Unter Life-Style-Software verstehen wir Technologien, die uns das Leben vereinfachen sollen. Aber auch hier kann das Gegenteil eintreten, wenn die Software nicht immer wie angepriesen funktioniert. 
+Ein Beispiel dafür ist ein Seifenspender welcher mit einer Künstlichen Intelligenz ausgestattet wurde. Dieser steht angeblich im Facebook Hauptbüro. 
+Der Seifenspender soll automatisch Hände erkennen und eine gewissen Menge Seife in die Hände geben. Allerdings erkennt dieser Seifenspender keine dunkelhäutigen Hände. \newline 
+
+Ein anderes Gadget welches eiegentlich das Leben erleichtern soll, aber doch häufig zu einem Ärgernis werden, ist die Fitness-Tracker-App von fitbit. Die App soll einem helfen, die eigene Aktivität oder Schlafzyklen zu messen. Zusätzlich kann man die eigene Kalorienaufnahme und das eigene Gewicht mitverfolgen. Da die täglich nötige Kalorienzufuhr und Bewegung abhängig von der physischen Verfassung ist, kommt es zu einem Problem. Vor allem bei schwangeren Frauen ist eine Gewichtszunhame und eine höhere Kalorienzufuhr wichtig für die Gesundheit. Zum Ende der Schwangerschaft, nimmt die Bewegung ab. Durch die App werden diese Aktivitäten negativ bewertet, da sie darauf programmiert ist, hohe AKtivität und vermeintlich gesundes Leben mit positiven Nachrichten zu belohnen. 
+Als Frau kann man in der App einstellen, wann die Regelblutung normalerweise eintritt, oder welches Verhütungsmittel genutzt wird, aber nicht, dass man zurzeit schwanger ist und somit die anstehenden Veränderungen normal und gesund sind. 
+Aber anstatt dessen, werden Frauen in besonderen Umständen mit Pushnachrichten dazu angehalten, sich mehr zu bewegen um wieder abzuspecken. 
+Dieses Feature wird sich seit 2008 von der Nutzer-Community immer wieder gewünscht und betrifft immerhin die Hälfte aller potenziellen Kunden. 
+
+
+\subsection[feature]{Diskussion - Ist Verzerrung eine Frage mangelnder Features?}
+
+% * <Alena Schemmert> 17:13:23 23 Sep 2019 UTC+0200:
+% Muss noch geschrieben werden. Notizen aus Vortrag
