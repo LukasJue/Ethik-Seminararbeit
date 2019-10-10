@@ -24,6 +24,7 @@
 *.xml
 *.lol
 *.gz(busy)
+*.ist
 
 # makeindex style file created by the glossaries package
 *.ist
