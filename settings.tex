@@ -91,12 +91,12 @@
 
 %Ermöglicht Verknüpfungen innerhalb des Dokumentes (e.g. for PDF), Links werden durch "hidelink" nicht explizit hervorgehoben
 \usepackage[hidelinks,german]{hyperref}
-
+\usepackage{nameref}
 %Einbindung und Verwaltung von Literaturverzeichnissen
 \usepackage{csquotes} %wird von biber benötigt
-\usepackage[style=alphabetic, backend=biber, bibencoding=ascii]{biblatex}
+\usepackage[style=alphabetic,citestyle=alphabetic,backend=biber,bibencoding=UTF-8]{biblatex}
 \addbibresource{references/references.bib}
-
+\nocite{*}
 %-------------------------------Zusätzliche Anpassungen und Modifikationen--------------------------------------------%
 
 %Anpassung der Überschriften
